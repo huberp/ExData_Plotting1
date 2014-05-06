@@ -13,6 +13,9 @@ oldwd <- getwd()
 setwd("set_to_your_wd_please")
 #setwd("./04_ExploratoryAnalysis/PA1/")
 
+#I enjoyed my german day names, but I be paranoid about "exactly reproduce" plots
+Sys.setlocale("LC_TIME", "English")
+
 source("loadData.R")
 #load data file once
 df<-loadInputFile()
