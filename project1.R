@@ -10,10 +10,11 @@
 ###############################################################################
 
 oldwd <- getwd()
-setwd("./04_ExploratoryAnalysis/PA1/")
+setwd("set_to_your_wd_please")
+#setwd("./04_ExploratoryAnalysis/PA1/")
 
 source("loadData.R")
-#
+#load data file once
 df<-loadInputFile()
 #
 
@@ -27,7 +28,7 @@ plots<-c("plot1.png"=plot1, "plot2.png"=plot2, "plot3.png"=plot3, "plot4.png"=pl
 dev.off()
 
 for(p in 1:length(plots)) {
-	dev.off()
+	
 	#don't use dev.copy - http://blog.revolutionanalytics.com/2009/01/10-tips-for-making-your-r-graphics-look-their-best.html
 	#transparency won't work
 	png(bg = "transparent",
