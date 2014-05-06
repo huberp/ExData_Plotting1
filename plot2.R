@@ -1,6 +1,6 @@
 # Exploratory Data Analysis 002
 # Programming Assignment 1
-# Plot 1
+# Plot 2
 # 
 # Author: huberp
 ###############################################################################

@@ -1,6 +1,6 @@
 # Exploratory Data Analysis 002
 # Programming Assignment 1
-# Plot 1
+# Plot 3
 # 
 # Author: huberp
 ###############################################################################
@@ -20,6 +20,9 @@ plot3 <- function(legendBorder=TRUE) {
 			type='l', 
 			col=colors[3])
 	
+	#some code to make it reusable
+	#we have one version with border around legend
+	#the other version (see plot4.R function) without
 	btyv <-"o"
 	if(!legendBorder) {
 		btyv<-"n"

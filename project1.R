@@ -1,5 +1,8 @@
 # run the plots
-# 
+# Precondition: 
+# 1.) All the files are loaded in wd: plot1.R - plot4.R, loadData.R and project1.R (this file)
+# 2.) The unziped verion of the input data file is also located in wd, household_power_consumption.txt
+#
 # Author: huberp
 ###############################################################################
 

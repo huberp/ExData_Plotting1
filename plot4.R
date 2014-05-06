@@ -1,6 +1,6 @@
 # Exploratory Data Analysis 002
 # Programming Assignment 1
-# Plot 1
+# Plot 4
 # 
 # Author: huberp
 ###############################################################################
@@ -13,7 +13,7 @@ source("plot3.R")
 
 plot4 <- function() {
 	par(mfrow=c(2,2))
-	
+	#reuse plot2 
 	plot2()
 	
 	plot(df$dateTime,df$Voltage, 
@@ -22,6 +22,7 @@ plot4 <- function() {
 			ylab="Voltage",
 			xlab="datetime")
 	
+	#reuse plot2
 	plot3(FALSE)
 	
 	plot(df$dateTime,df$Global_reactive_power, 
