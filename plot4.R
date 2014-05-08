@@ -5,7 +5,26 @@
 # Author: huberp
 ###############################################################################
 
-
+# 
+# Please dear peer, read this before grading
+#
+# HowTo Run this: source in some files and run functions...
+# 1. source("loadData.R")
+# 2. df<-loadData.R
+# 3. source("plot4.R")
+# 4. plot4()
+#
+# It does not produce a png? Please check file "project1.R", this runs all plots and builds my pngs
+#
+# Why is this a function? Because some plots can be reused and using a function is better then copy paste
+#
+# Any assumptions? YES, the data must be stored into variable "df", see step 2
+# 
+# Where can I find example of reuse? Please look into "plot4.R"
+#
+# How does the author run it? Please see "project1.R"
+#
+###############################################################################
 ##
 ##reuse ploting fuctions
 source("plot2.R")
@@ -28,6 +47,6 @@ plot4 <- function() {
 	plot(df$dateTime,df$Global_reactive_power, 
 			type='l', 
 			col='black',
-			ylab="Voltage",
+			ylab="Global_reactive_power",
 			xlab="datetime")
 }

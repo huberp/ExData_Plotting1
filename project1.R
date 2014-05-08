@@ -10,8 +10,8 @@
 ###############################################################################
 
 oldwd <- getwd()
-setwd("set_to_your_wd_please")
-#setwd("./04_ExploratoryAnalysis/PA1/")
+#setwd("set_to_your_wd_please")
+setwd("./04_ExploratoryAnalysis/PA1/")
 
 #I enjoyed my german day names, but I be paranoid about "exactly reproduce" plots
 Sys.setlocale("LC_TIME", "English")
@@ -33,10 +33,14 @@ dev.off()
 for(p in 1:length(plots)) {
 	
 	#don't use dev.copy - http://blog.revolutionanalytics.com/2009/01/10-tips-for-making-your-r-graphics-look-their-best.html
-	#transparency won't work
-	png(bg = "transparent",
+	#transparency won't work with copying
+	#
+	#names(plots)[p] -> {"plot1.png",..."plot4.png"}
+	#plots[[p]] -> {plot1,...plot4}; pointers to functions 
+	png(bg = "white", 
 		filename = names(plots)[p],
-		width = 480, height = 480 
+		width = 480, 
+		height = 480 
 	)
 	plots[[p]]()
 	dev.off()
