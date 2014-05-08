@@ -43,3 +43,10 @@ plot2 <- function() {
 			xlab="")
 }
 
+# UNCOMMENT the following lines TO RUN, but see project1.R
+##########################################################
+#source("loadData.R")
+#df<-loadData() 
+#png(bg = "white", filename = "plot2.png",width = 480, height = 480)
+#plot2()
+#def.off()

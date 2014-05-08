@@ -41,7 +41,7 @@ plot4 <- function() {
 			ylab="Voltage",
 			xlab="datetime")
 	
-	#reuse plot2
+	#reuse plot3
 	plot3(FALSE)
 	
 	plot(df$dateTime,df$Global_reactive_power, 
@@ -50,3 +50,11 @@ plot4 <- function() {
 			ylab="Global_reactive_power",
 			xlab="datetime")
 }
+
+# UNCOMMENT the following lines TO RUN, but see project1.R
+##########################################################
+#source("loadData.R")
+#df<-loadData() 
+#png(bg = "white", filename = "plot4.png",width = 480, height = 480)
+#plot4()
+#def.off()

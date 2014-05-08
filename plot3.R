@@ -41,8 +41,7 @@ plot3 <- function(legendBorder=TRUE) {
 			type='l', 
 			col=colors[3])
 	
-	#some code to make it reusable
-	#we have one version with border around legend
+	#some code to make it reusable we have one version with border around legend
 	#the other version (see plot4.R function) without
 	btyv <-"o"
 	if(!legendBorder) {
@@ -60,3 +59,11 @@ plot3 <- function(legendBorder=TRUE) {
 			lwd=c(2.5,2.5, 2.5),
 			col=colors) # gives the legend lines the correct color and width
 }
+
+# UNCOMMENT the following lines TO RUN, but see project1.R
+##########################################################
+#source("loadData.R")
+#df<-loadData() 
+#png(bg = "white", filename = "plot3.png",width = 480, height = 480)
+#plot3()
+#def.off()

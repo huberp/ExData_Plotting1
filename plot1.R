@@ -40,3 +40,10 @@ plot1 <- function() {
 	axis(side=1, at=seq(0,6, 2), labels=seq(0,6,2))
 }
 
+# UNCOMMENT the following lines TO RUN, but see project1.R
+##########################################################
+#source("loadData.R")
+#df<-loadData() 
+#png(bg = "white", filename = "plot1.png",width = 480, height = 480)
+#plot1()
+#def.off()
