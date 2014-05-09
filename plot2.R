@@ -10,7 +10,7 @@
 #
 # HowTo Run this: source in some files and run functions...
 # 1. source("loadData.R")
-# 2. df<-loadData.R
+# 2. df<-loadData()
 # 3. source("plot2.R")
 # 4. plot2()
 #
