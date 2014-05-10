@@ -56,8 +56,12 @@ plot3 <- function(legendBorder=TRUE) {
 			col=colors) # gives the legend lines the correct color and width
 }
 
+#PLEASE: set working directory pointing to your directory with R files and input file in it
 oldwd <- getwd()
 setwd("./04_ExploratoryAnalysis/PA1/")
+#I enjoyed my german day names, but I be paranoid about "exactly reproduce" plots
+Sys.setlocale("LC_TIME", "English")
+
 source("loadData.R")
 df<-loadInputFile() 
 png(bg = "white", filename = "plot3.png",width = 480, height = 480)
