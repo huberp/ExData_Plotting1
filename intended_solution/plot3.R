@@ -8,17 +8,21 @@
 # 
 # Please dear peer, read this before grading
 #
-# HowTo Run this: 
-# 1. download input file and unpack it to a dir
-# 2. store the R files into same dir
-# 3. adjust the setwd call to point to the dir
-# 4. source in the file...
+# HowTo Run this: source in some files and run functions...
+# 1. source("loadData.R")
+# 2. df<-loadInputFile()
+# 3. source("plot3.R")
+# 4. plot3()
 #
-# Why is the plot a function? Because some plots can be reused and using a function is better then copy paste
+# It does not produce a png? Please check file "project1.R", this runs all plots and builds my pngs
+#
+# Why is this a function? Because some plots can be reused and using a function is better then copy paste
 #
 # Any assumptions? YES, the data must be stored into variable "df", see step 2
-#
+# 
 # Where can I find example of reuse? Please look into "plot4.R"
+#
+# How does the author run it? Please see "project1.R"
 #
 ###############################################################################
 
@@ -55,11 +59,3 @@ plot3 <- function(legendBorder=TRUE) {
 			lwd=c(2.5,2.5, 2.5),
 			col=colors) # gives the legend lines the correct color and width
 }
-
-oldwd <- getwd()
-setwd("./04_ExploratoryAnalysis/PA1/")
-source("loadData.R")
-df<-loadInputFile() 
-png(bg = "white", filename = "plot3.png",width = 480, height = 480)
-plot3()
-dev.off()
